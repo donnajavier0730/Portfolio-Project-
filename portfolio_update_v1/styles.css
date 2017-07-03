@@ -30,6 +30,7 @@ a:hover {
   padding: 10px;
   position: fixed;
   text-align: center;
+  z-index: 1;
 }
 .nav {
   display: flex;
@@ -65,14 +66,22 @@ header {
 header {
   line-height: 1.5;
 }
+
+.profile-image-div {
+  height: 150px;
+  width: 150px;
+  margin: 50px auto 20px;
+}
+
 header .profile-image {
-  margin-top: 50px;
   width: 150px;
   height: 150px;
   border-radius: 50%;
   border: 3px solid white;
   transition: all .5s;
 }
+
+
 header .profile-image:hover {
   transform: scale(1.2) rotate(5deg);
 }
@@ -88,8 +97,26 @@ header .profile-image:hover {
   background-color: #222;
   color: yellow;
 }
+
+.qm {
+  width: 45px;
+  float: left;
+  margin-right: 10px;
+  overflow: hidden;
+}
+
+.quote {
+  margin: 20px auto 0 auto;
+  max-width: 700px;
+  color: #ff99ff;
+}
+
+.quote:hover {
+  color: purple;
+}
+
 .card {
-  margin: 30px;
+  margin: 20px 30px;
   padding: 20px 40px 40px;
   max-width: 500px;
   text-align: left;
@@ -162,6 +189,7 @@ a.github {
 }
 a.social:hover {
   opacity: 1;
+  transform: scale(1.2) rotate(45deg);
 }
 .clearfix {
   clear: both;
